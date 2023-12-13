@@ -1,0 +1,535 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Baloo Chettan 2" , cursive;
+    transition: all 0.3 ease-in-out;
+}
+
+
+body {
+    /* font-familya: "Open Sasn", sans-serif; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow-x: hidden;
+    /* font-familya: "Baloo oaaji", cursive; */
+}
+
+
+
+/* ======= Start Screen Responsive ======== */
+    .container {
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    /* Big */
+    @media (min-width:1200px){
+        .container{
+            width: 970;
+        }
+    }
+
+    /* Medium */
+
+    @media (min-width:992px) {
+        .container{
+            width: 992px;
+        }
+    }
+
+    /* Small */
+
+     @media (min-width: 768) {
+        .container{
+            width: 750px;
+        }
+     }
+
+
+
+
+/* ========= End Screen Responsive ======== */
+
+/* ====== Start nav-bar ======== */
+
+     .nav-bar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100000;
+     }
+
+
+
+     .nav-bar .container{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid black 1px;
+        height: 12vh;
+        align-items: center;
+     }
+
+
+     .nav-bar .container .links ul {
+        display: flex;
+        gap: 2rem;
+        flex-direction: row-reverse;
+        align-items: center;
+     }
+     
+     .nav-bar .container .logo a {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+     }
+
+
+     .nav-bar .container .links ul li a {
+        font-size: 19px;
+        font-weight: bold;
+        color: #fff;
+     }
+
+     .nav-bar .container .logo a:hover {
+        color: #638ECB;
+     }
+
+     .nav-bar .container .links ul li a:hover{
+        color:#638ECB;
+     }
+
+
+     .nav-bar .container .links li .home{
+        display: block;
+        border: solid 3px #534688;
+        padding: 10px 20px;
+        background-color: #534688;
+        color: #fff;
+     }
+
+     .nav-bar .container .links li .home:hover {
+        color: #638ECB;
+     }
+
+    
+
+     .nav-bar .container .logo {
+        font-size: 30px;
+        font-weight: bold;
+     }
+
+     
+
+
+     
+
+
+/* ======= End nav-bar ======== */
+
+
+
+
+/* ======== start landing-page ========== */
+
+
+    .landing-page {
+        background-image: url("../style/imges/fd.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+    }
+
+
+    .landing-page .background{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+    }
+
+
+
+    .landing-page .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        z-index: 10000;
+        font-family: "Baloo Chettan 2" , cursive;
+        width: fit-content;
+    }
+
+
+    .landing-page .container h1{
+        font-size: 55px;
+        font-family: "Baloo paaji",cursive;
+        color: rgb(34, 34, 48);
+    }
+   
+
+    .landing-page .container .my-name{
+        color: #212529;
+        font-family: "Baloo Chettan 2" , cursive;
+    }
+
+    .landing-page .container P{
+        width: 100%;
+        font-size: 20px;
+        letter-spacing: 6px;
+        color: #111;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+
+    .landing-page .container button{
+        width: 150px;
+        border: solid 3px #534688;
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #534688;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .landing-page .container button:hover{
+        background-color: #ffffff;
+        color: #534688;
+    }
+
+
+/* ========= End landing-page ========== */
+
+
+
+
+
+
+/* ======== Start About ======== */
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+
+.about .container .img-container {
+    width: 400px;
+}
+
+.about .container .img-container img {
+    width: 100%;
+}
+
+
+.about .container h2 {
+    font-size: 32px;
+    color: #695aa6;
+    margin-bottom: 1rem;
+}
+
+
+
+.about .container b {
+    font-size: 25px;
+    color: #737070;
+    font-weight: 100;
+    letter-spacing: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+.about .container p {
+    font-size: 20px;
+    color: #272525;
+    font-weight: 100;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+
+.about .container button {
+         width: 150px;
+        border: solid 3px #534688;
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #534688;
+        color: #ffffff;
+        cursor: pointer;
+}
+
+
+.about .container .content button:hover {
+    background-color: #fff;
+    color: #534688;
+}
+
+/* ======== End About ========== */
+
+
+
+
+/* ======= Start portfolio =========== */
+.poartfolio .container{
+    text-align: center;
+}
+
+.poartfolio .container h3{
+    font-size: 32px;
+    font-family: 'Baloo paaji' , cursive;
+    color: #695aa6;
+}
+
+.poartfolio .container p{
+    font-size: 14px;
+    font-weight: 100%;
+    margin-bottom: 3rem;
+}
+
+.poartfolio .container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.poartfolio .container .box-container .box img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ======= End portolio =========== */
+
+/* {يحتوي على العنصر القديم والعنصر الجديد} العنصر الاب */
+.poartfolio .container .box-container .parent-box{
+    position: relative;
+    width: 30%;
+}
+
+/* العنصر الجديد */
+.poartfolio .container .box-container .box-new{
+    opacity: 0;
+    background-color: #e1dfefc1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.poartfolio .container .box-container .box-new h4{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Bsloo paaji", cursive;
+    color: #695aa6;
+    margin-bottom: 0.5rem;
+}
+
+.poartfolio .container .box-container .box-new a{
+    color: #000;
+}
+
+/* التاثير */
+.poartfolio .container .box-container .parent-box:hover .box-new{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ======= End Portfolio =========== */
+
+
+
+/* ====== Start blue-seciton ======= */
+
+.blue-seciton{
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: #695aa6;
+}
+
+.blue-seciton .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-seciton .container .left p{
+    font-size: 27px;
+    font-family: "Bsloo paaji", cursive;
+    color: #fff;
+}
+
+.blue-seciton .container .left .text-first{
+    font-family: "Bsloo paaji", cursive;
+}
+
+
+.blue-seciton .container .right button{
+    width: 150px;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #534688;
+    font-family: "Bsloo paaji", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ====== End blue-seciton ========= */
+
+
+
+/* ====== Start Testmonial ========= */
+
+.testi-section .container{
+    text-align: center;
+}
+
+
+.testi-section .container h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: black;
+    opacity: 0.8;
+    letter-spacing: 0.6px;
+}
+
+.testi-section .container h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Bsloo paaji", cursive;
+    color: #534688;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.testi-section .container .parent-item{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.testi-section .container .parent-item .first{
+    border: solid 2px #534688;
+    padding: 30px;
+    width: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
+}
+
+.testi-section .container .parent-item .first .text{
+    text-align: start;
+}
+
+.testi-section .container .parent-item .first .img-container{
+    width: 70px;
+    position: absolute;
+    left: -35px;
+}
+
+.testi-section .container .parent-item .first .img-container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ====== End Testmonial =========== */
+
+
+/* ======= Strat input ======= */
+
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #534688;
+    gap: 2rem;
+}
+
+
+
+.input-group{
+    
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #534688;}
+
+
+.input-group label {
+    
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px;
+    background: transparent;
+    border: 1.2px solid #fff;
+    border-radius: 5px;
+}
+
+
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: 0;
+    font-size: 12px;
+    background-color: #534688;
+}
+
+.input-group button{
+    width: 100px;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #534688;
+    font-family: "Bsloo paaji", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ======= End input ======= */
